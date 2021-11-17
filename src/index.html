@@ -6,6 +6,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div class="contenedor">
+        <h2 class="logo"> ESTUDIO GHIBLI </h2>
+        <nav>
+          <a href="#" class="activo"> Películas </a>
+          <a href="#"> Historia </a>
+          <input type="search" class= "src" placeholder="Buscar" autocomplete="off">
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pelicula-principal">
+      </section>
+      <section class="filterSection">
+        <select name="directors" class="item"> 
+          <option disabled selected>Filtrar por director</option>
+          <option value="Takahata">Isao Takahata</option>
+          <option value="Miyazaki">Hayao Miyazaki</option>
+          <option value="Hara">Toru Hara</option>
+          <option value="Suzuki">Toshio Suzuki</option>
+          <option value="Nishimura">Yoshiaki Nishimura</option>
+        </select>
+        <select name="producers" class="item">
+          <option disabled selected>Filtrar por productor</option>
+          <option value="Takahata">Isao Takahata</option>
+          <option value="Hara">Toru Hara</option>
+          <option value="Suzuki">Toshio Suzuki</option>
+          <option value="Nishimura">Yoshiaki Nishimura</option>
+        </select>  
+        <select name="sortBy" class="item">
+          <option disabled selected>Ordenar por</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option value="mostOld">Más antiguo</option>
+          <option value="mostRecent">Más reciente</option>
+        </select>
+      </section>
+      
+    </main>
+
+    <footer>
+      <p style="color:white"> Copyright© 2021 Shiran y Claudia. Todos los derechos reservados  </p>
+    </footer>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
