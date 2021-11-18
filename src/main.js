@@ -1,23 +1,31 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
+import { filterDirector, filterProducer, sortAZ,} from './data.js';
 import data from './data/ghibli/ghibli.js';
-console.log(data.films[0].title);
 
 let films = data.films;
-let titleFilm= films.map((f) => f.title);
-let posterFilm= films.map((f) => f.poster);
-let descriptionFilm= films.map((f) => f.description);
-let directorFilm= films.map((f) => f.director);
-let producerFilm= films.map((f) => f.producer);
-let releaseFilm= films.map((f) => f.release_date);
 
-console.log(titleFilm)
+let director = document.getElementById("chooseDirector");
+console.log(director)
 
-function allFilms() {
-    for (let i=0; i<titleFilm.length; i++) {
-        
-    }
-}
+const directors=filterDirector('Hayao Miyazaki');
+console.log(directors)
 
+const producers=filterProducer('');
 
+const sortFilms=sortAZ();
+console.log(sortFilms)
 
+const showTitle = document.getElementById("showFilms");
+
+films.forEach((pelicula)=>{
+    //Pintar cards
+    let movie = pelicula.title;
+    let poster = pelicula.poster;
+    console.log(movie,poster);
+    
+    
+    showTitle.innerHTML = `${movie} ${poster}`; 
+    })
+
+directors.forEach((pelicula)=>{
+    
+})

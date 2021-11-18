@@ -26,7 +26,7 @@
 
     <main>
       <section class="filterSection">
-        <select name="directors" class="item"> 
+        <select name="directors" class="item" id=chooseDirector> 
           <option disabled selected>Filtrar por director</option>
           <option value="Takahata">Isao Takahata</option>
           <option value="Miyazaki">Hayao Miyazaki</option>
@@ -51,6 +51,10 @@
           <option value="mostRecent">Más reciente</option>
         </select>
       </section>
+      
+      <article id="showFilms">
+        <div class="cards" id="filmContainer"> </div>
+      </article>
       
 
     </main>
