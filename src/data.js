@@ -1,23 +1,35 @@
-// estas funciones son de ejemplo
 import data from './data/ghibli/ghibli.js';
 
 export const filterDirector = (nombre) => {
- return data.films.filter((pelicula)=>{
-    return pelicula.director===nombre
+ return data.films.filter((movie)=>{
+    return movie.director===nombre
+  });
+};
+ 
+export const filterProducer = (nombre) => {
+  return data.films.filter((movie)=>{
+    return movie.producer===nombre
   });
 };
 
-export const filterProducer = (nombre) => {
-  return data.films.filter((pelicula)=>{
-    return pelicula.producer===nombre
+/*export const filterYear = (year) => {
+  return data.films.filter((movie)=>{
+    return movie.release_date===year
   });
-};
+};*/
 
 export const sortAZ = () => {
-  return data.films.sort((nombre1, nombre2) => {
-    return (nombre1.title < nombre2.title) ? -1 : 1
+  const newArray = Array.from(data.films);
+  return newArray.sort((nombre, nombre1) => {
+    return (nombre.title < nombre1.title) ? -1 : 1
   });
-  
+};
+
+export const sortZA = () => {
+  const newArray = Array.from(data.films);
+  return newArray.sort((nombre, nombre1) => {
+    return (nombre.title > nombre1.title) ? -1 : 1
+  });
 };
 
 

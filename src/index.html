@@ -26,37 +26,36 @@
 
     <main>
       <section class="filterSection">
-        <select name="directors" class="item" id=chooseDirector> 
+        <select name="directors" class="item" id="chooseDirector"> 
           <option disabled selected>Filtrar por director</option>
-          <option value="Takahata">Isao Takahata</option>
-          <option value="Miyazaki">Hayao Miyazaki</option>
-          <option value="Hara">Toru Hara</option>
-          <option value="Suzuki">Toshio Suzuki</option>
-          <option value="Nishimura">Yoshiaki Nishimura</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
 
-        <select name="producers" class="item">
+        <select name="producers" class="item" id="chooseProducer">
           <option disabled selected>Filtrar por productor</option>
-          <option value="Takahata">Isao Takahata</option>
-          <option value="Hara">Toru Hara</option>
-          <option value="Suzuki">Toshio Suzuki</option>
-          <option value="Nishimura">Yoshiaki Nishimura</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
 
-        <select name="sortBy" class="item">
+        <select name="sortBy" class="item" id="sortBy">
           <option disabled selected>Ordenar por</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-          <option value="mostOld">Más antiguo</option>
-          <option value="mostRecent">Más reciente</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="Más antiguo">Más antiguo</option>
+          <option value="Más reciente">Más reciente</option>
         </select>
       </section>
       
-      <article id="showFilms">
-        <div class="cards" id="filmContainer"> </div>
-      </article>
+      <article id="showFilms"> </article>
       
-
     </main>
 
     <footer>
