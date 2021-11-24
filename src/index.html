@@ -14,7 +14,7 @@
         <h1> ESTUDIO GHIBLI</h1>
       <nav class= "navigation">
           <ul>
-            <li><a href="#"> Películas </a></li>
+            <li><a href="#principalMenu" id="moviesGhibli"> Películas </a></li>
             <li><a href="#"> Historia </a></li>
           </ul>
       </nav>
@@ -25,7 +25,7 @@
     </header>
 
     <main>
-      <section class="filterSection">
+      <section class="filterSection" id="principalMenu">
         <select name="directors" class="item" id="chooseDirector"> 
           <option disabled selected>Filtrar por director</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -55,6 +55,8 @@
       </section>
       
       <article id="showFilms"> </article>
+
+      <article id="showDescription" class="hide"> </article>
       
     </main>
 

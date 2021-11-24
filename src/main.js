@@ -33,31 +33,9 @@ sortBy.addEventListener('change', () => {
 })*/
 
 
-const showTitle = document.getElementById('showFilms');
-function showCards(allMovies) {
-    showTitle.innerHTML = '';
-    allMovies.forEach((movie) => {
-        const card = document.createElement('div');
-        card.setAttribute('class', 'styleMovie');
-        const info = document.createElement('p');
-        info.setAttribute('class', 'styleTitle');
-        //const info = document.createTextNode(movie.title);
-        info.textContent = `${movie.title}`;
-        //Pintar cards
-        let {poster} = movie;
-        const posterCards = document.createElement('img');
-        posterCards.setAttribute('class', 'styleImg');
-        posterCards.src = poster;
-        showTitle.appendChild(card);
-        card.appendChild(posterCards);
-        card.appendChild(info);
-        })
-}
-showCards(films);
-
 const showDetails = document.getElementById('showDescription');
 function showInfo(allDetails) {
-    console.log('Estoy en showInfo')
+    
     allDetails.forEach((movie) => {
         const card = document.createElement('div');
         const info = document.createElement('pre');
@@ -76,3 +54,30 @@ function showInfo(allDetails) {
     }) 
 }
 showInfo(films)
+
+
+const showTitle = document.getElementById('showFilms');
+function showCards(allMovies) {
+    showTitle.innerHTML = '';
+    allMovies.forEach((movie) => {
+        const card = document.createElement('div');
+        card.setAttribute('class', 'styleMovie');
+        const info = document.createElement('p');
+        info.setAttribute('class', 'styleTitle');
+        //const info = document.createTextNode(movie.title);
+        info.textContent = `${movie.title}`;
+        //Pintar cards
+        let {poster} = movie;
+        const link = document.createElement('a');
+        link.setAttribute('href', '#showDescription');
+        const posterCards = document.createElement('img');
+        console.log(posterCards);
+        posterCards.setAttribute('class', 'styleImg');
+        posterCards.src = poster;
+        showTitle.appendChild(card);
+        card.appendChild(link);
+        link.appendChild(posterCards);
+        card.appendChild(info);
+        })
+}
+showCards(films);
