@@ -1,8 +1,8 @@
 import data from './data/ghibli/ghibli.js';
 
 export const filterDirector = (nombre) => {
- return data.films.filter((movie)=>{
-    return movie.director===nombre
+  return data.films.filter((movie) => {
+    return movie.director === nombre
   });
 };
  
@@ -25,12 +25,12 @@ export const sortAZ = () => {
   });
 };
 
-export const sortZA = () => {
+/*export const sortZA = () => {
   const newArray = Array.from(data.films);
   return newArray.sort((nombre, nombre1) => {
     return (nombre.title > nombre1.title) ? -1 : 1
   });
-};
+};*/
 
 
 
