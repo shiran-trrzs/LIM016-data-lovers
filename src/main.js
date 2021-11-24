@@ -55,3 +55,24 @@ function showCards(allMovies) {
 }
 showCards(films);
 
+const showDetails = document.getElementById('showDescription');
+function showInfo(allDetails) {
+    console.log('Estoy en showInfo')
+    allDetails.forEach((movie) => {
+        const card = document.createElement('div');
+        const info = document.createElement('pre');
+        info.textContent = `
+        ${movie.title}
+        Synopsis:${movie.description}
+        Director:${movie.director}
+        Producer:${movie.producer}
+        Release date:${movie.release_date}`;
+        let {poster} = movie;
+        const posterCards = document.createElement('img');
+        posterCards.src = poster;
+        showDetails.appendChild(card);
+        card.appendChild(posterCards);
+        card.appendChild(info);
+    }) 
+}
+showInfo(films)
