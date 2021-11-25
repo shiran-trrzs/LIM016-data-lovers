@@ -5,16 +5,17 @@
     box-sizing: border-box;
   }
   
-  body{
+body{
     background: #DDEBED;
     font-family: 'Open Sans', sans-serif;
-  }
+}
   
-  header{
+header{
     padding: 0px;
-  }
   
-  header .contenedor{
+}
+  
+header .contenedor{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,16 +26,16 @@
     background: rgba(124, 188, 190, 0.6);
     box-sizing: border-box;
     padding: 30px;
-  }
+}
   
-  header .logo{
+header .logo{
     font-family: 'Bebas Neue', cursive;
     color: #fff;
     font-weight: normal;
     font-size: 40px;
   }
   
-  header nav a{
+header nav a{
     color: #fff;
     text-decoration: none;
     margin-right: 30px;
@@ -62,7 +63,7 @@
   /*imagen principal */
   .pelicula-principal{
     width: 100vw;
-    height: 80vh;
+    height: 45rem;
     overflow: hidden;
   }
   .wrapper{
@@ -82,18 +83,18 @@
   }
   .fondo1{
     background-image: url("https://studioghiblimovies.com/wp-content/uploads/2018/11/sNZ1Ux2.jpg");
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 45rem;
   }
   .fondo2{
     background: url("https://i.pinimg.com/originals/2a/5e/72/2a5e72b3abdc165f368a8eaa23c7797c.jpg");
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 45rem;
   }
   .fondo3{
     background: url("https://images3.alphacoders.com/245/thumb-1920-245067.jpg");
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 45rem;
   }
 
  .filterSection {
@@ -107,13 +108,61 @@
     border-width: 3px 0px 3px 0px;
     border-color:rgb(112, 221, 197);
     padding: 4px 0;
+    border-radius: 5px;
+  }
+  #refresh{
+    font-size: 14px;
+    border-width: 3px 0px 3px 0px;
+    border-color:rgb(112, 221, 197);
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  .cards{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .stylemovie{
+    margin: 10px;
+    padding: 0px;
+    align-items: center;   
+  }
+  img{
+    border-radius: 25px;
+    object-fit: cover;
+    height: 276px;
+    width: 200px;
+    padding: 0px;
+    margin: 20px;
+  }
+  .styletitle{
+    height: 100px;
+    width: 200px;
+    padding: 10px; 
+    text-align: center;
+  }
+  .stylecard{
+    display:flex;
+  }
+  .stylecontent{
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    width: 50rem;
+    margin: 20px;
+    align-content: center;
+  }
+  .styleparrafo{
+    width: 40rem;
+    padding: 20px; 
+    text-align: left;
   }
   footer{
-      background: #000000;
-      bottom: 0%;
-      width: 100%;
-      position: fixed;
-      text-align: center;
-      font-family: 'Open Sans', sans-serif;
-      padding: 30px;
-   }
+    background: #000000;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px; 
+  }
