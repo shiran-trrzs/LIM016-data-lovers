@@ -89,10 +89,10 @@ function showInfo(allDetails){
             parrafo.setAttribute("class","styleparrafo");
             let contenido= `
             <h2>${film.title}</h2>
-            Synopsis: ${film.description}
-            Director: ${film.director}
-            Producer: ${film.producer}
-            Release date: ${film.release_date}`;
+            <h4 style="color:blue;">Synopsis:</h4>${film.description}
+            <h4 style="color:blue;">Director:</h4>${film.director}
+            <h4 style="color:blue;">Producer:</h4>${film.producer}
+            <h4 style="color:blue;">Release date:</h4>${film.release_date}`;
             parrafo.innerHTML= contenido;
             showDetails.appendChild(filmCard);
             filmCard.appendChild(posterCards);

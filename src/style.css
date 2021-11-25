@@ -144,19 +144,19 @@ header nav a{
   }
   .stylecard{
     display:flex;
+    padding: 3rem;
   }
   .stylecontent{
     background-color: rgb(255, 255, 255);
     border-radius: 3rem;
-    width: 50rem;
-    margin: 20px;
-    align-content: center;
+    width: 40rem; 
   }
   .styleparrafo{
     width: 40rem;
-    padding: 20px; 
+    padding: 3rem; 
     text-align: left;
   }
+  
   footer{
     background: #000000;
     bottom: 0;
