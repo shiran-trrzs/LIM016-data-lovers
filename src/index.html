@@ -64,5 +64,60 @@
     </footer>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+
+    <header class="header">
+      <div class="container logo-nav">
+        <h1> ESTUDIO GHIBLI</h1>
+      <nav class= "navigation">
+          <ul>
+            <li><a href="#principalMenu" id="moviesGhibli"> Películas </a></li>
+            <li><a href="#"> Historia </a></li>
+          </ul>
+      </nav>
+        <form>
+          <input type="search" class="src" placeholder="Buscar">
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="filterSection" id="principalMenu">
+        <select name="directors" class="item" id="chooseDirector"> 
+          <option disabled selected>Filtrar por director</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+
+        <select name="producers" class="item" id="chooseProducer">
+          <option disabled selected>Filtrar por productor</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+
+        <select name="sortBy" class="item" id="sortBy">
+          <option disabled selected>Ordenar por</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="Más antiguo">Más antiguo</option>
+          <option value="Más reciente">Más reciente</option>
+        </select>
+      </section>
+      
+      <article id="showFilms"> </article>
+
+      <article id="showDescription" class="hide"> </article>
+      
+    </main>
+
+    <footer>
+      <p style="color:white"> Copyright© 2021 Shiran y Claudia. Todos los derechos reservados  </p>
+    </footer>
   </body>
 </html>

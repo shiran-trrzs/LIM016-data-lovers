@@ -3,8 +3,7 @@ import data from './data/ghibli/ghibli.js';
 export const filterDirector = (nombre) => {
  return data.films.filter((movie)=>{
     return movie.director===nombre
-  })
-  ;
+  });
 };
 
 export const filterProducer = (nombre) => {
