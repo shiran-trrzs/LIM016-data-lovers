@@ -2,6 +2,9 @@ import { filterDirector, filterProducer, sortYear, orderYear, sortAz, sortZa } f
 import data from './data/ghibli/ghibli.js';
 
 let films = data.films;
+let principal = document.getElementById('carrousel');
+let home = document.getElementById('active');
+
 
 let director = document.getElementById('chooseDirector');
 director.addEventListener('change', () => {
@@ -99,9 +102,9 @@ function showInfo(movie) {
         Name: ${location.name}
         Climate: ${location.climate}
         Terrain: ${location.terrain}
-        Surface water: ${location.surface_water}
-        Residents : ${location.residents} </pre>
+        Surface water: ${location.surface_water}</pre>
         </div>`
+        
     })
     const locations = document.createElement('div');
     locations.setAttribute('class', 'styleLocation');
@@ -126,7 +129,6 @@ function showInfo(movie) {
 
 }
 
-
 const showTitle = document.getElementById('showFilms');
 function showCards(allMovies) {
     showTitle.innerHTML = '';
@@ -134,7 +136,12 @@ function showCards(allMovies) {
         const card = document.createElement('div');
         card.id = movie.id;
         card.addEventListener('click', () => {
+            principal.classList.toggle('hide');
             showTitle.classList.toggle('hide');
+            director.classList.toggle('hide');
+            producer.classList.toggle('hide');
+            selectSort.classList.toggle('hide');
+            reload.classList.toggle('hide');
             showInfo(movie);
         })
         card.setAttribute('class', 'styleMovie');
@@ -149,6 +156,16 @@ function showCards(allMovies) {
         showTitle.appendChild(card);
         card.appendChild(posterCards);
         card.appendChild(info);
+
+        home.addEventListener('click', ()=> {
+            principal.classList.remove('hide');
+            showTitle.classList.remove('hide');
+            director.classList.remove('hide');
+            producer.classList.remove('hide');
+            selectSort.classList.remove('hide');
+            reload.classList.remove('hide');
+            showDetails.innerHTML= '';
+        })
     })
 }
 showCards(films);

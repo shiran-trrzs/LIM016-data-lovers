@@ -9,12 +9,12 @@
     <div id="root"></div>
     <script src="main.js" type="module"></script>
 
-    <header class="header">
+    <header>
       <div class="container logo-nav">
         <h1> ESTUDIO GHIBLI</h1>
       <nav class= "navigation">
           <ul>
-            <li><a id="active"> Home </a></li>
+            <li><a href="#" id="active"> Home </a></li>
             <li><a href="#principalMenu" id="moviesGhibli"> Movies </a></li>
             <li><a href="#"> History </a></li>
           </ul>
@@ -26,6 +26,10 @@
     </header>
 
     <main>
+      <section class="header" id="carrousel">
+        
+      </section>
+      
       <section class="filterSection" id="principalMenu">
         <select name="directors" class="item" id="chooseDirector"> 
           <option disabled selected>Filtrar por director</option>
@@ -60,7 +64,7 @@
       
       <article id="showFilms"> </article>
 
-      <article id="showDescription"> </article>
+      <article id="showDescription" class="showDescription"> </article>
 
       <article id="showCharacter"> </article>
       
