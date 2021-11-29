@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
+
+    <header class="header">
+      <div class="container logo-nav">
+        <h1> ESTUDIO GHIBLI</h1>
+      <nav class= "navigation">
+          <ul>
+            <li><a id="active"> Home </a></li>
+            <li><a href="#principalMenu" id="moviesGhibli"> Movies </a></li>
+            <li><a href="#"> History </a></li>
+          </ul>
+      </nav>
+        <form>
+          <input type="search" class="src" placeholder="Buscar">
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="filterSection" id="principalMenu">
+        <select name="directors" class="item" id="chooseDirector"> 
+          <option disabled selected>Filtrar por director</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+
+        <select name="producers" class="item" id="chooseProducer">
+          <option disabled selected>Filtrar por productor</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+
+        <select name="sortBy" class="item" id="sortBy">
+          <option disabled selected>Ordenar por</option>
+          <option value="A-Z">A-Z</option>
+          <option value="Z-A">Z-A</option>
+          <option value="Más antiguo">Más antiguo</option>
+          <option value="Más reciente">Más reciente</option>
+        </select>
+
+        <button type="button" id="refresh">refresh</button>
+        
+      </section>
+      
+      <article id="showFilms"> </article>
+
+      <article id="showDescription"> </article>
+
+      <article id="showCharacter"> </article>
+      
+    </main>
+
+    <footer>
+      <p style="color:white"> Copyright© 2021 Shiran y Claudia. Todos los derechos reservados  </p>
+    </footer>
+  </body>
+</html>

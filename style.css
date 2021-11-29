@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
+body {
+    background: #DDEBED;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    color: #fff;
+    font-weight: normal;
+    font-size: 40px;
+}
+.header {
+    background:  url(/src/img/ponyo-sg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+}
+
+    .header a {
+        color:white;
+        text-decoration: none;
+    }
+
+.container {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    background: rgba(124, 188, 190, 0.6);
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+        }
+
+.src {
+        padding: 9px 10px 9px 32px;
+        font-size: 14px;
+        border-radius: 15px;
+        border: 3px solid rgb(255, 255, 255);
+        background: rgb(245, 255, 254) url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat 9px center;
+        width: 120px;
+        transition: all .5s;
+          }
+
+    input.src:hover {
+        width: 180px;
+        box-shadow: 0 0 5px #6dcff680;
+          }        
+
+.filterSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}         
+          
+.item {
+    font-size: 16px;
+    border-width: 3px 3px 3px 3px;
+    border-color:rgb(112, 221, 197);
+    padding: 4px;
+}
+
+footer {
+    background: #000000;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+ }
+
+#showFilms {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.styleMovie {
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 16px;
+    margin: 20px;
+}
+
+img {
+    display: flex;
+    border-radius: 20px;
+    height: 276px;
+    width: 200px;
+    padding: 0%;
+}
+
+.styleTitle {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+
+#refresh {
+    font-size: 14px;
+    border-width: 3px 3px 3px 3px;
+    border-color:rgb(112, 221, 197);
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.styleCard {
+    display:flex;
+    padding: 4rem;
+    border: 4rem;
+}
+
+.styleContent {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+}
+
+.styleParagraph {
+    width: 40rem;
+    padding: 2rem;
+    margin: 0%;
+}
+
+.styleImg {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 40rem;
+    width: 30rem;
+    margin: 20px;
+}
+
+.styleCharacter {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    margin: 40px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.styleLocation {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5%;
+    justify-content: center;
+}
+
+.hide {
+    display: none !important;
+} 
