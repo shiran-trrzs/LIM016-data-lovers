@@ -1,4 +1,4 @@
-# Data Lovers- Studio Ghibli
+# Data Lovers
 
 ## Índice
 

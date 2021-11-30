@@ -10,14 +10,15 @@
       <div class="contenedor">
         <h2 class="logo"> ESTUDIO GHIBLI </h2>
         <nav>
-          <a href="#filterSection" class="activo"> Películas </a>
-          <a href="#"> Historia </a>
-          <input type="search" class= "src" placeholder="Buscar" autocomplete="off">
+          <a href="#" id="activo"> Home </a>
+          <a href="#filterSection"> Movies </a>
+          <a href="#"> History </a>
+          <input type="search" class= "src" placeholder="Search" autocomplete="off">
         </nav>
       </div>
     </header>
     <main>
-      <section class="pelicula-principal">
+      <section class="pelicula-principal" id="carrousel">
         <div class="wrapper">
           <div class="fondo1"></div>
           <div class="fondo2"></div>
@@ -26,7 +27,7 @@
       </section>
       <section id="filterSection" class="filterSection">
         <select name="directors" class="item" id=chooseDirector> 
-          <option disabled selected>Filtrar por director</option>
+          <option disabled selected>Filter by director</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
@@ -35,7 +36,7 @@
           <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
         <select name="producers" class="item" id=chooseProducer>
-          <option disabled selected>Filtrar por productor</option>
+          <option disabled selected>Filter by productor</option>
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
           <option value="Toru Hara">Toru Hara</option>
@@ -43,11 +44,11 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>  
         <select name="sortBy" class="item" id="sortBy">
-          <option disabled selected>Ordenar por</option>
+          <option disabled selected>Sort by</option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
-          <option value="Más antiguo">Más antiguo</option>
-          <option value="Más reciente">Más reciente</option>
+          <option value="The oldest">The oldest</option>
+          <option value="The latest">The latest</option>
         </select> 
         <button type="button" id="refresh">refresh</button>
       </section>
@@ -56,7 +57,6 @@
       </div>
       </section>
       <article id='showDescription'> 
-        
       </article>
     </main>
     <footer>
