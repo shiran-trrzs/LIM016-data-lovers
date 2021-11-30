@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
+
   
 body{
     background: #DDEBED;
     font-family: 'Open Sans', sans-serif;
+    margin:0%;
 }
   
 header{
-    padding: 0px;
-  
-}
-  
+    padding: 0px; 
+} 
+
 header .contenedor{
     display: flex;
     justify-content: space-between;
@@ -129,12 +125,12 @@ header nav a{
     align-items: center;   
   }
   img{
-    border-radius: 25px;
+    display: flex;
+    border-radius: 2rem;
     object-fit: cover;
     height: 276px;
     width: 200px;
     padding: 0px;
-    margin: 20px;
   }
   .styletitle{
     height: 100px;
@@ -142,27 +138,106 @@ header nav a{
     padding: 10px; 
     text-align: center;
   }
+  #return{
+    display: flex;
+    vertical-align: justify;
+    font-size: 14px;
+    border-width: 3px 0px 3px 0px;
+    border-color:rgb(112, 221, 197);
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+  }
   .stylecard{
     display:flex;
-    padding: 3rem;
+    border: 3rem;
+    align-items: center;
   }
   .stylecontent{
     background-color: rgb(255, 255, 255);
     border-radius: 3rem;
-    width: 40rem; 
+    width: 43rem; 
   }
   .styleparrafo{
     width: 40rem;
-    padding: 3rem; 
+    padding: 2rem; 
     text-align: left;
   }
-  
-  footer{
+  .styleImg{
+    border-radius: 25px;
+    object-fit: cover;
+    height: 40rem;
+    width: 30rem;
+    padding: 0px;
+    margin: 2rem;
+  }
+  .styleposter:hover{
+    filter: opacity(.5);
+  }
+  .styleCharacter{
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    margin: 3rem;
+    display:flex;
+    padding: 2rem;
+    flex-wrap:wrap;
+    justify-content: space-around;
+ }
+
+  .styleperson{
+    padding:2rem;
+    margin: 1rem;
+    background-color:#f5f7f9;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .styleLocation{
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    margin: 3rem;
+    display:flex;
+    padding: 2rem;
+    flex-wrap:wrap;
+    justify-content: space-around;
+ }
+
+ .styleplace{
+  padding:2rem;
+  margin: 1rem;
+  background-color:#f5f7f9;
+  border-radius: 2rem;
+  font-size:0.8rem;
+}
+
+.stylevehicles{
+  background-color: rgb(255, 255, 255);
+  border-radius: 3rem;
+  margin: 3rem;
+  display:flex;
+  padding: 2rem;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.stylemovil{
+  padding:2rem;
+  margin: 1rem;
+  background-color:#f5f7f9;
+  border-radius: 2rem;
+  font-size:0.8rem;
+  width: 15rem;
+}
+
+footer{
     background: #000000;
     bottom: 0;
     width: 100%;
     position: fixed;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    padding: 20px; 
+}
+
+.hide{
+    display: none !important;
   }
