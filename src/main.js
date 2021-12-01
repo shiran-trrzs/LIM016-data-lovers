@@ -45,7 +45,7 @@ function showCards(movies){
             showDetails.innerHTML= "";
         });
     })
-    };
+    }
 showCards(films);
 
 let selectDirectors= document.getElementById('chooseDirector');
@@ -171,4 +171,4 @@ function showInfo(film){
             showDetails.appendChild(character);
             showDetails.appendChild(locations);
             showDetails.appendChild(vehicles);
-};
+}
