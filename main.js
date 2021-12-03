@@ -23,7 +23,6 @@ producer.addEventListener('change', () => {
 let selectSort = document.getElementById('sortBy');
 selectSort.addEventListener('change', () => {
     let optionSelected = selectSort.value;
-    console.log(optionSelected)
     let finalResult;
     switch (optionSelected) {
         case 'A-Z':
@@ -32,23 +31,25 @@ selectSort.addEventListener('change', () => {
         case 'Z-A':
             finalResult = sortZa(optionSelected);
             break;
-        case 'Más antiguo':
+        case 'Oldest':
             finalResult = sortYear(optionSelected);
             break;
-        case 'Más reciente':
+        case 'More recent':
             finalResult = orderYear(optionSelected);
             break;
         default:
-            console.log('default');
+            finalResult = ('')
             break;
     }
-    console.log(finalResult);
     showCards(finalResult);
 });
 
 let reload = document.getElementById('refresh');
 reload.addEventListener('click', () => {
     showCards(films);
+    director.selectedIndex = 0;
+    producer.selectedIndex = 0;
+    selectSort.selectedIndex = 0;
 });
 
 const showDetails = document.getElementById('showDescription');
@@ -61,11 +62,11 @@ function showInfo(movie) {
     const info = document.createElement('p');
     info.setAttribute('class', 'styleParagraph');
     info.innerHTML = `
-        <h2> ${movie.title} </h2>
-        <h4 style='color:black'> <span style='color:blue'> Synopsis:</span> ${movie.description} </h4>
-        <h4 style='color:blue'> Director: </h4> ${movie.director} 
-        <h4 style='color:blue'> Producer: </h4> ${movie.producer} 
-        <h4 style='color:blue'> Release date: </h4> ${movie.release_date}`;
+        <h2> <center> ${movie.title} </h2>
+        <h4 style='color:blue'> <span style='color:blue'> Synopsis:</h4> ${movie.description} <br><br>
+        <b style='color:blue'> Director: </b> ${movie.director} <br><br>
+        <b style='color:blue'> Producer: </b> ${movie.producer} <br><br>
+        <b style='color:blue'> Release date: </b> ${movie.release_date}`;
     let { poster } = movie;
     const posterCards = document.createElement('img');
     posterCards.setAttribute('class', 'styleImg')
@@ -80,12 +81,12 @@ function showInfo(movie) {
         templateCharacters += `
         <div class = 'stylePeople'>
         <img src='${character.img}'>
-        <pre>
-        Name: ${character.name}
-        Gender: ${character.gender}
-        Age: ${character.age}
-        Eye color: ${character.eye_color}
-        Specie: ${character.specie} </pre>
+        <p>
+        Name: ${character.name} <br>
+        Gender: ${character.gender} <br>
+        Age: ${character.age} <br>
+        Eye color: ${character.eye_color} <br>
+        Specie: ${character.specie} </p>
         </div>`
     })
     const character = document.createElement('div');
@@ -96,13 +97,13 @@ function showInfo(movie) {
     let templateLocations = '';
     movie.locations.forEach((location) => {
         templateLocations += `
-        <div>
+        <div class= 'stylePlace'>
         <img src='${location.img}'>
-        <pre>
-        Name: ${location.name}
-        Climate: ${location.climate}
-        Terrain: ${location.terrain}
-        Surface water: ${location.surface_water}</pre>
+        <p>
+        Name: ${location.name} <br>
+        Climate: ${location.climate} <br>
+        Terrain: ${location.terrain} <br>
+        Surface water: ${location.surface_water}</p>
         </div>`
         
     })
@@ -113,11 +114,13 @@ function showInfo(movie) {
 
     let templateVehicles = '';
     movie.vehicles.forEach((vehicles) => {
-        templateVehicles += `<div clas='stylemovil'>
+        templateVehicles += `
+        <div class='styleMovil'>
         <img src='${vehicles.img}'>
-        <p>Name: ${vehicles.name}<br>
-        Description: ${vehicles.description}<br>
-        Class: ${vehicles.vehicle_class}<br>
+        <p>
+        Name: ${vehicles.name} <br>
+        Description: ${vehicles.description} <br>
+        Class: ${vehicles.vehicle_class} <br>
         Pilot : ${vehicles.pilot.name} </p>
         </div>`
     });
@@ -125,8 +128,6 @@ function showInfo(movie) {
     vehicles.setAttribute('class', 'styleVehicles');
     vehicles.innerHTML = `${templateVehicles}`;
     showDetails.appendChild(vehicles);
-
-
 }
 
 const showTitle = document.getElementById('showFilms');
@@ -147,9 +148,9 @@ function showCards(allMovies) {
         card.setAttribute('class', 'styleMovie');
         const info = document.createElement('p');
         info.setAttribute('class', 'styleTitle');
-        //const info = document.createTextNode(movie.title);
+        
         info.textContent = `${movie.title}`;
-        //Pintar cards
+        
         let { poster } = movie;
         const posterCards = document.createElement('img');
         posterCards.src = poster;
@@ -169,6 +170,3 @@ function showCards(allMovies) {
     })
 }
 showCards(films);
-
-
-

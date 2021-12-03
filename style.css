@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap');
+
 body {
     background: #DDEBED;
     margin: 0px;
@@ -88,14 +89,6 @@ a {
     padding: 4px;
 }
 
-footer {
-    background: #000000;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
-    text-align: center;
- }
-
 #showFilms {
     display: flex;
     flex-wrap: wrap; 
@@ -134,14 +127,18 @@ img {
 }
 
 .styleCard {
-    display: flex;
+    display:flex;
+    align-items: center;
     justify-content: space-between;
+    border: 3rem;
 }
 
 .styleContent {
     display: flex;
+    justify-content: space-evenly;
     background-color: rgb(255, 255, 255);
     border-radius: 3rem;
+    margin: 30px 30px 0px 0px;
 }
 
 .styleParagraph {
@@ -151,35 +148,82 @@ img {
 }
 
 .styleImg {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 25px;
+    object-fit: cover;
     height: 40rem;
     width: 30rem;
-    margin: 20px;
+    padding: 0px;
+    margin: 5rem 10rem 0rem 10rem;
 }
 
 .styleCharacter {
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
     background-color: rgb(255, 255, 255);
-    margin: 40px;
-    padding: 10px;
-    justify-content: space-evenly;
+    border-radius: 3rem;
+    margin: 3rem;
+    padding: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stylePeople {
+    padding: 2rem 2rem 2rem 5rem;
+    margin: 1rem;
+    background-color:#f5f7f9;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    width: 240px;
 }
 
 .styleLocation {
-    display: flex;
-    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 5%;
+    border-radius: 3rem;
+    margin: 3rem;
+    display:flex;
+    padding: 2rem;
+    flex-wrap:wrap;
     justify-content: space-around;
 }
 
-#showDescription {
-    justify-content: space-evenly;
+.stylePlace {
+    padding: 2rem;
+    margin: 1rem;
+    background-color:#f5f7f9;
+    border-radius: 2rem;
+    font-size:0.8rem;
 }
+
+.styleVehicles {
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    margin: 3rem 3rem 5rem 3rem;
+    padding: 2rem;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.styleMovil {
+    padding:2rem 2rem 2rem 2rem;
+    margin: 1rem;
+    background-color:#f5f7f9;
+    border-radius: 2rem;
+    font-size:0.8rem;
+}
+
+#showDescription {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer {
+    background: #000000;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+ }
 
 .hide {
     display: none !important;
