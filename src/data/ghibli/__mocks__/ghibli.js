@@ -30,4 +30,8 @@ export default {
         "release_date": "2011",
       }
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4a6262bc07048ef1cac51c97475213811ca6f00d
