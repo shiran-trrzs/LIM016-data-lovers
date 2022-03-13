@@ -123,5 +123,6 @@ en 2 idiomas.
 
 Vista final de nuestro proyecto al cierre del 4to sprint 🎊
 
-<img src="https://github.com/claudiaricce/LIM016-data-lovers/blob/main/final%201.jpg?raw=true"/>
-<img src="https://github.com/claudiaricce/LIM016-data-lovers/blob/main/final%202.jpg?raw=true">
+![](./src/img/shiran-trrzs.github.io_LIM016-data-lovers_.png)
+
+![](./src/img/shiran-trrzs.github.io_LIM016-data-lovers%20(3).png)
