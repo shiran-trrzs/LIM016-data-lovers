@@ -9,6 +9,7 @@ body{
   
 header{
     padding: 0px; 
+    position: fixed;
 } 
 
 header .contenedor{

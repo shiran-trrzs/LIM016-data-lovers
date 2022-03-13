@@ -88,7 +88,7 @@ necesidades.
     Para: tener la información detallada de cada locación y vehículo.   
    
     Definición de terminado:  
-    En la 2da vista incluir las imágenes de las locaciones y vehículos con sus datos y ordenarlos.
+    En la 2da vista incluir las imágenes de las locaciones y vehículos con sus datos para ordenarlos.
   
 ## 3. Diseño de la Interfaz de Usuario 🔖
 
@@ -121,7 +121,7 @@ en 2 idiomas.
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Vista final de nuestro proyecto al cierre del 4to sprint
+Vista final de nuestro proyecto al cierre del 4to sprint 🎊
 
 <img src="https://github.com/claudiaricce/LIM016-data-lovers/blob/main/final%201.jpg?raw=true"/>
 <img src="https://github.com/claudiaricce/LIM016-data-lovers/blob/main/final%202.jpg?raw=true">

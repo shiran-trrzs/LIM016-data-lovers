@@ -52,7 +52,7 @@ let selectDirectors= document.getElementById('chooseDirector');
     selectDirectors.addEventListener('change', () => {
       let selectedOption= selectDirectors.value;      
       let result= filterDirector(selectedOption);
-      console.log(result)
+      // console.log(result)
       showCards(result);
     });
     
@@ -81,7 +81,7 @@ let selectSort= document.getElementById('sortBy');
                 finalResult= orderYear(optionSelected);
                 break;
             default:
-                console.log('default');
+                // console.log('default');
                 break;
         }
         showCards(finalResult);
