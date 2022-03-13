@@ -16,21 +16,6 @@
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "babel-jest": "^27.0.1",
-    "eslint": "^7.12.1",
-<<<<<<< HEAD
-    "gh-pages": "^3.1.0",
-    "htmlhint": "^0.9.9",
-    "jest": "^27.0.1",
-    "opener": "^1.5.1",
-    "serve": "^8.2.0"
-=======
-    "htmlhint": "^0.15.1",
-    "opener": "^1.5.1",
-    "serve": "^12.0.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "jest": "^27.3.1"
->>>>>>> 4a6262bc07048ef1cac51c97475213811ca6f00d
+    "eslint": "^7.12.1"
   }
 }

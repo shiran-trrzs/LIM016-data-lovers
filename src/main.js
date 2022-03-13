@@ -1,4 +1,4 @@
-import {filterDirector, filterProducer, sortAZ, sortZA} from './data.js';
+import {filterDirector, filterProducer, sortAz, sortZa, sortYear, orderYear} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 let films= data.films;
@@ -12,7 +12,7 @@ function showCards(movies){
         //div dentro de cartas
         let filmCard= document.createElement("div"); 
         filmCard.id=film.id;
-        filmCard.addEventListener('click', (evento) =>{
+        filmCard.addEventListener('click', () =>{
             principal.classList.toggle('hide');
             cards.classList.toggle('hide');
             selectDirectors.classList.toggle('hide');
@@ -35,7 +35,7 @@ function showCards(movies){
         cards.appendChild(filmCard);
         filmCard.appendChild(parrafo);
         parrafo.appendChild(contenido);
-        home.addEventListener('click', (e)=> {
+        home.addEventListener('click', ()=> {
             principal.classList.remove('hide');
             cards.classList.remove('hide');
             selectDirectors.classList.remove('hide');
