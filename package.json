@@ -9,13 +9,15 @@
     "pretest": "npm run eslint && npm run htmlhint",
     "test": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve src/",
+    "start": "serve ./src",
     "deploy": "gh-pages -d src"
   },
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "babel-jest": "^27.0.1",
-    "eslint": "^7.12.1"
+    "eslint": "^7.12.1",
+    "htmlhint": "^1.1.4",
+    "serve": "^13.0.2"
   }
 }

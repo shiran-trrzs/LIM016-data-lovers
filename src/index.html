@@ -17,7 +17,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <section class="pelicula-principal" id="carrousel">
         <div class="wrapper">
@@ -36,15 +35,14 @@
           <option value="Gorō Miyazaki">Gorō Miyazaki</option>
           <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
-        <select name="producers" class="item" id=chooseProducer>
+        <select name="producers" class="item" id="chooseProducer">
           <option disabled selected>Filter by productor</option>
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
           <option value="Toru Hara">Toru Hara</option>
           <option value="Toshio Suzuki">Toshio Suzuki</option>
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-        </select>
-
+        </select>  
         <select name="sortBy" class="item" id="sortBy">
           <option disabled selected>Sort by</option>
           <option value="A-Z">A-Z</option>
@@ -54,16 +52,14 @@
         </select> 
         <button type="button" id="refresh">refresh</button>
       </section>
-      <section>
-      <div class="cards" id="cards">
-      </div>
-      </section>
-      <article id="showDescription"> 
+      
+      <article class="cards" id="cards"> 
       </article>
     </main>
-
     <footer>
-      <p style="color:white"> Copyright© 2021 Shiran y Claudia. All rights reserved  </p>
+      <p style="color:white"> Copyright© 2021 Shiran y Claudia. Todos los derechos reservados  </p>
     </footer>
+    <div id="root"></div>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
